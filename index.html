@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="fibApp">
+<head>
+	<title>fibonacci</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+<script src="script/app.js"></script>
+<!--<script src="script/service/fibservice.js"></script>-->
+
+</head>
+<body>
+
+<div ng-controller="fibCtrl">
+<h3><br>AngularJs Fibonacci Series</h3></br>
+Enter number:<input type="number" ng-model="num" />
+<button class="btn-primary" type="submit"  ng-click="fibonacci(num)">click</button>
+<br/><h4/>Fibonacci series is:
+<div ng-repeat=" output in result track by $index"> {{output}}</div>
+</div>
+
+</body>
+</html> 
